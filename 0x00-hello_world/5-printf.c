@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: main block w/c is always required
+ * main - main block w/c is always required
  * Description:a program to print some statment
- * Return: return is always0 for main
+ * Return: 0 is always 0 for main
  */
 
 int main(void)
