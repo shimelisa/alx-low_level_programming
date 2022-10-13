@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /**
- * This is main block
- * The program is to print "Programming is like building a multilingual puzzle."
+ * main - required for each code
+ * Return: return for main funciton is always 0
+ * The program is to print "Some Statement"
  */
 
-int main (void)
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
