@@ -5,7 +5,7 @@
 /**
 * main - main heder
 * Description: this code check if num is +ve or -ve
-* return - 0 return is 0
+* Rturn: 0 return is 0 always
 */
 
 int main(void)
