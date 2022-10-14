@@ -11,7 +11,7 @@ int main(void)
 {
 	char sml_cap;
 
-	for (sml_cap ='a'; sml_cap <= 'z'; sml_cap++)
+	for (sml_cap = 'a'; sml_cap <= 'z'; sml_cap++)
 		putchar(sml_cap);
 	for (sml_cap = 'A'; sml_cap <= 'Z'; sml_cap++)
 		putchar(sml_cap);
