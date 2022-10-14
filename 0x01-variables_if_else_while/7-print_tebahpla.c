@@ -5,7 +5,7 @@
 * Description: this program prints alphabet in revers
 * Return: 0 (always 0)
 */
-itn main(void)
+int main(void)
 {
 	char small;
 
