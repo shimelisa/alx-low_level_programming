@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main - main body of the program
-* Description: this program lists combi of 2digit#
-* Return: 0 (always 0 for main branch)
+* main - main funciton
+* Description: print all combination of two digt#
+* Return: 0 (always 0 for main)
 */
 int main(void)
 {
@@ -14,61 +14,21 @@ int main(void)
 	{
 		for (j = i + 1; j <= 99; j++)
 		{
-			if (i < 10)
-			{
-				putchar(0 + '0');
-				putchar(i + '0');
-				putchar(' ');
-			}
-			else
-			{
-				str[0] = i / 10;
-				str[1] = i % 10;
+			putchar(i / 10 + '0');
+			putchar(i % 10 + '0');
+			putchar (' ');
 
-				putchar(str[0] + '0');
-				putchar(str[1] + '0');
-				putchar(' ');
-			}
+			putchar(j / 10 + '0');
+			putchar(j % 10 + '0');
 
-			if (j < 10)
+			if (i < 98)
 			{
-				putchar(0 + '0');
-				putchar(j + '0');
 				putchar(',');
 				putchar(' ');
 			}
-			else if (j < 99)
-			{
-				str[0] = j / 10;
-				str[1] = j % 10;
-
-				putchar(str[0] + '0');
-				putchar(str[1] + '0');
-				putchar(',');
-				putchar(' ');
-			}
-			else if (j == 99 && i < 98)
-			{
-				str[0] = j / 10;
-				str[1] = j % 10;
-
-				putchar(str[0] + '0');
-				putchar(str[1] + '0');
-				putchar(',');
-				putchar(' ');
-			}
-			else if (j == 99 && i == 98)
-			{
-				str[0] = j / 10;
-				str[1] = j % 10;
-
-				putchar(str[0] + '0');
-				putchar(str[1] + '0');
-			}
-			
 		}
 	}
 	putchar('\n');
 
 	return (0);
-}
+}			
