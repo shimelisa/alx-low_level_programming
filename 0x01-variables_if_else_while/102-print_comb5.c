@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	int i, j, k;
+	int i, j;
 	char str[2];
 
 	for (i = 0; i <= 99; i++)
@@ -47,7 +47,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-			else if (j == 99 & i < 98)
+			else if (j == 99 && i < 98)
 			{
 				str[0] = j / 10;
 				str[1] = j % 10;
