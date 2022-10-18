@@ -1,16 +1,19 @@
 #include "main.h"
 /**
-* main - funciton prints text
+* main - program start
 * Return: 0
 */
 int main (void)
 {
-	char somebdy[10] = "_putchar";
-	int i;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 
-	for (i = 0; i < 8; i++)
-		_putchar([somebdy[i]);
-
-	_putchar(10);
+	_putchar('\n');
 	return(0);
 }
