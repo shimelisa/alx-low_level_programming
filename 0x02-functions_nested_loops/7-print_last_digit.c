@@ -7,6 +7,7 @@
 int print_last_digit(int n)
 {
 	int shim = n % 10;
+
 	if (shim < 0)
 	{
 		_putchar(-shim + 48);
