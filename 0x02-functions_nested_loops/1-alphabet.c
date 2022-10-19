@@ -1,18 +1,18 @@
 #include "main.h"
 /**
-* main - prgram start
-* Return: 0
+* main - main program
+* Return: always 0
 */
-int main (void)
+int main(void)
 {
 	char alphabet = 'a';
 
 	while (alphabet <= 'z')
 	{
 		_putchar(alphabet);
-		alphaabet++;
+		alphabet++;
 	}
 	_putchar('\n');
 
 	return (0);
-}
+}	
