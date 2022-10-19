@@ -6,6 +6,16 @@
 */
 int print_last_digit(int n)
 {
-	return (n % 10);
+	int shim = n % 10;
+	if (l < 0)
+	{
+		_putchar(-l + 48);
+		return (-l);
+	}
+	else
+	{
+		_putchar(l + 48);
+		return (l);
+	}
 	_putchar('\n');
 }
