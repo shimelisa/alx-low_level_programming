@@ -10,7 +10,7 @@ void times_table(void)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (i < 2 || j < 2 || (i < 5 && J < 3) || (i < 4 && j < 4) || (i < 3 && j < 4))
+			if (i < 2 || j < 2 || (i < 5 && j < 3) || (i < 4 && j < 4) || (i < 3 && j < 4))
 			{
 				_putchar((i * j) + '0');
 				if (j < 9)
