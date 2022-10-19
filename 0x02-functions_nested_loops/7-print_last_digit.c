@@ -7,15 +7,15 @@
 int print_last_digit(int n)
 {
 	int shim = n % 10;
-	if (l < 0)
+	if (shim < 0)
 	{
-		_putchar(-l + 48);
-		return (-l);
+		_putchar(-shim + 48);
+		return (-shim);
 	}
 	else
 	{
-		_putchar(l + 48);
-		return (l);
+		_putchar(shim + 48);
+		return (shim);
 	}
 	_putchar('\n');
 }
