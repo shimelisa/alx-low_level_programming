@@ -2,10 +2,9 @@
 #include <unistd.h>
 #include <unisted.h>
 /**
-* main - I don't know
+* _putchar - writes char to std out
 *
-* Return: Always 0
-*_putchar - writes char to stdout
+* Return: integer
 */
 int _putchar(char c)
 {
