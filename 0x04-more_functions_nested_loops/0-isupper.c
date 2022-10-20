@@ -7,7 +7,7 @@
 * Return: Always 0.
 */
 
-int _isuuper(int c)
+int _isuper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);
