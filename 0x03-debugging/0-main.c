@@ -1,4 +1,5 @@
 #include "main.h"
+#include "time.h"
 /**
 * main - test if funciton check and print if #is +ve or -ve
 * Return: 0
