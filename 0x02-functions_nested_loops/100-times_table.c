@@ -4,7 +4,7 @@
 * @n: given integer for times table
 * Return: Void
 */
-void print_times_table (int n)
+void print_times_table(int n)
 {
 	int i, j, k;
 
@@ -25,7 +25,7 @@ void print_times_table (int n)
 					_putchar(' ');
 					_putchar(k + '0');
 				}
-				else if (k < 99)
+				else if (k < 100)
 				{
 					_putchar(' ');
 					_putchar((k / 10) + '0');
