@@ -1,6 +1,5 @@
-#include "main"
+#include "main.h"
 #include <unistd.h>
-#include <unisted.h>
 /**
 * _putchar - writes char to std out
 * @c: charcter input
