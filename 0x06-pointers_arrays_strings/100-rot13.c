@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 /**
 * rot13 - charcter coding by shifting 13 positions
 * @s: String to be coded
