@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* memset - fill memmory with constant byte
+* _memset - fill memmory with constant byte
 * @s: points to memory area
 * @b: byte to be filled to memory area
 * @n: number of memory bytes to be filled
@@ -10,13 +10,12 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i = 0;
-	unsigned *m = s;
 
 	while (n > 0)
 	{
-		m[i] = b;
+		s[i] = b;
 		i++;
 		n--;
 	}
-	return (m);
+	return (s);
 }

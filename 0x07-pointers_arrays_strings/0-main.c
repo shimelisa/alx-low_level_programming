@@ -1,47 +1,45 @@
-#include <stdio.h>
 #include "main.h"
+#include "stdio.h"
 /**
-* main - check the code
-*
-* Return: Always 0.
-*/
+ * simple_print_buffer - prints buffer in hexa
+ * @buffer: the address of memory to print
+ * @size: the size of the memory to print
+ *
+ * Return: Nothing.
+ */
+void simple_print_buffer(char *buffer, unsigned int size)
+{
+        unsigned int i;
+
+        i = 0;
+        while (i < size)
+        {
+                if (i % 10)
+                {
+                        printf(" ");
+                }
+                if (!(i % 10) && i)
+                {
+                        printf("\n");
+                }
+                printf("0x%02x", buffer[i]);
+                i++;
+        }
+        printf("\n");
+}
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int n, i;
-	char c;
-	int nn[3] = {98, 198, 298};
-	char cc[3] = {'a', 'Z', 'b'};
+    char buffer[98] = {0x00};
 
-	printf("Size of type 'char' on my computer is: %lu bytes.\n", sizeof(char));
-	printf("Size of type 'char' on my computer is: %lu bytes.\n", sizeof(int));
-	printf("Size of type 'char' on my computer is: %lu bytes.\n", sizeof(float));
-	printf("Size of type of my variable n on my computer is: %lu bytes.\n", sizeof(n));
-
-	printf("Address of variable 'c': %p\n", &c);
-	printf("Address of variable 'n': %p\n", &n);
-
-	for (i = 0; i < 3; i++)
-	{
-		printf("Address and value of nn[%i] is: %p %i\n", i, &(nn[i]), nn[i]);
-		printf("Address and value of cc[%i] is: %p %c\n", i, &(cc[i]), cc[i]);
-	}
-
-	int *p;
-	int a[2];
-	char g[7] = "School";
-	int m;
-
-	p = &m;
-	printf("p = &m; \np: %p\n", p);
-	printf("p + 1: %p\n", p + 1);
-	printf("p + 2: %p\n", p + 2);
-	printf("p + 10: %p\n", p + 10);
-
-	p = a;
-	printf("p = a; \np: %p\np + 1: %p\n", p, p + 1);
-	printf("%s\n", g);
-	printf("Value of \"School\": %p\n", "School");
-	printf("%p\n",g);
-
-	return (0);
+    simple_print_buffer(buffer, 98);
+    _memset(buffer, 0x01, 95);
+    printf("-------------------------------------------------\n");
+    simple_print_buffer(buffer, 98);
+    return (0);
 }
