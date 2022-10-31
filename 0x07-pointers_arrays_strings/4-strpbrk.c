@@ -4,7 +4,7 @@
 */
 
 #include "main.h"
- /**
+/**
 * _strpbrk - search string for an of a set of bytes
 * @s: String to be searched
 * @accept: set of bytes to be searched
