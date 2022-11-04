@@ -1,1 +1,1 @@
-#Repository for alx programming repos used for excercises
+# Repository for alx programming repos used for excercises
