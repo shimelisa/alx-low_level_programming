@@ -2,7 +2,7 @@
 #define FUNCTION_LIKE_MACRO_H
 
 /**
- * ABS(x) - function like macro that define absolute value of x
+ * ABS - function like macro that define absolute value of x
  * @x: integer to be absoluted
  */
 
