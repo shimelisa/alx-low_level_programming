@@ -16,8 +16,8 @@ In addition it has excercies to practice the above concepts. Requirement of Exce
 * No global variable allowed
 * No more than 5 function per file
 * Use only the below standard library funcitons:
-  ** `malloc`, `free` & `exit`.
+  * `malloc`, `free` & `exit`.
 * Do not use the below standard funciton:
-  ** `printf`, `puts`, `calloc`, `realloc`, etc...
+  * `printf`, `puts`, `calloc`, `realloc`, etc...
 * You can use `_putchar`
 * You have to push your header file `main.h`
