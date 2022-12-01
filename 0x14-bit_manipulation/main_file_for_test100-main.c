@@ -16,3 +16,12 @@ int main(void)
     }
     return (0);
 }
+
+/**
+ * Reuslt is:
+ *
+ * Little Endian
+ *
+ * to confirm run "lscpu | head" command
+ *
+ */
