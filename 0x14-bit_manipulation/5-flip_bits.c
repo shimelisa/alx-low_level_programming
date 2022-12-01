@@ -7,7 +7,7 @@
  *
  * Return: #of bits needed to be flipped
  */
-int flip_bits(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int count = 0, i;
 
