@@ -2,8 +2,7 @@
 
 This project covered topics on how to manipulate bits and use the bitwise operators `>>`, `<<`, `&`, `|`, and `^` in C.
 
-* `bitwise operator`: is operator that compares value bit by bit and it includes:
-
+* `bitwise operator`: is operator that compares two values or single value bit by bit and it includes:
    * `&`: AND `bitwise binary` operator
    * `|`: OR `bitwise binary` operator --> A OR B = Including Boxth (A or B or both are 1)
    * `~`: NOT `bitwise unary` operator
@@ -11,7 +10,7 @@ This project covered topics on how to manipulate bits and use the bitwise operat
    * `>>`: Right Shift `bitwise binary` operator
    * `^`: XOR `bitwise binary` operator --> A XOR B = Excluding BOTH (Either A is 1 or Bis 1)
 
-## Tests File :heavy_check_mark:
+## Tests File Folder :file_folder:
 
 * [main_file_for_test](./main_file_for_test): Folder that contain test mian files provided on the excercise
 
