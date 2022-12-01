@@ -1,16 +1,19 @@
 #include "main.h"
 
 /**
- * set_bit - sets bit at index to 1
- * @n: pointer to number
- * @index: bit location to change
+ * flip_bits - count #of bits required to be flipped in n to get m
+ * @n: first number
+ * @m: second number
  *
- * Return: 1 on success, -1 on failure
+ * Return: #of bits needed to be flipped
  */
-int clear_bit(unsigned long int *n, unsigned int index)
+int flip_bits(unsigned long int n, unsigned long int m)
 {
-	if (index >= 8 * sizeof(*n))
-		return (-1);
-	*n &= ~(1 << index);
-	return (1);
+	unsigned long int count = 0, i;
+
+	for (i = 0; i < 8 * sizeof(n); i++)
+		if (((n ^ m) >> i) & 1)
+			count++;
+
+	return (count);
 }
